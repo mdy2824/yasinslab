@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YASINS LAB – Games and apps for Android</title>
+<meta name="description" content="YASINS LAB builds games and apps for the Google Play Store. Based in Singrauli, Madhya Pradesh, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF2F6; --ink:#14213D; --blue:#2F5BFF; --amber:#FFB703; --line:#C9D3E0; --muted:#4A5873;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); background-color:var(--paper);
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:32px 32px;
+  font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:1.0625rem; line-height:1.6;
+}
+a{color:var(--blue)}
+a:focus-visible{outline:3px solid var(--amber); outline-offset:3px}
+.wrap{max-width:860px; margin:0 auto; padding:0 24px}
+header{padding:28px 0}
+header .wrap{display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap}
+.mark{font-family:"Bricolage Grotesque",Georgia,serif; font-weight:800; font-size:1.25rem; letter-spacing:.02em}
+nav a{margin-left:20px; color:var(--ink); text-decoration:none; font-weight:500}
+nav a:hover{color:var(--blue)}
+.hero{padding:72px 0 64px}
+h1{
+  font-family:"Bricolage Grotesque",Georgia,serif; font-weight:800;
+  font-size:clamp(3rem,13vw,7.5rem); line-height:.92; margin:0 0 28px; letter-spacing:-.03em;
+}
+.hero p{max-width:34em; font-size:1.25rem; margin:0; color:var(--muted)}
+section{padding:48px 0}
+section .wrap > div.panel{background:var(--paper); border:2px solid var(--ink); padding:32px; box-shadow:8px 8px 0 var(--ink)}
+h2{font-family:"Bricolage Grotesque",Georgia,serif; font-weight:700; font-size:1.75rem; margin:0 0 16px}
+.games{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.game{border:2px solid var(--ink); background:#fff; padding:20px}
+.game h3{font-family:"Bricolage Grotesque",Georgia,serif; margin:0 0 8px; font-size:1.2rem}
+.game p{margin:0 0 12px; color:var(--muted)}
+.btn{display:inline-block; background:var(--blue); color:#fff; padding:10px 18px; text-decoration:none; font-weight:500}
+.btn:hover{background:var(--ink)}
+dl{margin:0; display:grid; grid-template-columns:max-content 1fr; gap:10px 24px}
+dt{font-weight:500}
+dd{margin:0}
+footer{padding:40px 0; color:var(--muted); font-size:.95rem}
+@media (max-width:560px){ dl{grid-template-columns:1fr; gap:2px} dd{margin-bottom:12px} nav a{margin:0 16px 0 0} }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="mark">YASINS LAB</span>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#products">Our apps</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>YASINS LAB</h1>
+      <p>We design, build and publish games and apps for Android, from first sketch to the Google Play Store.</p>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="panel">
+        <h2>About us</h2>
+        <p>YASINS LAB is an independent software studio based in Singrauli, Madhya Pradesh, India. It was founded by Md Yasin, who builds and maintains every product the studio releases.</p>
+        <p>We make games and apps for the Google Play Store, and we keep them simple, fast and respectful of players' privacy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap">
+      <h2>Our apps and games</h2>
+      <div class="games">
+        <!-- Replace this card with your real game. Copy the block to add more. -->
+        <div class="game">
+          <h3>Location Guesser</h3>
+          <p>Puzzle game based on guessing the correct location.</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=YOUR.PACKAGE.NAME">View on Google Play</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="panel">
+        <h2>Contact</h2>
+        <dl>
+          <dt>Company</dt><dd>YASINS LAB</dd>
+          <dt>Owner</dt><dd>Md Yasin</dd>
+          <dt>Email</dt><dd><a href="mailto:mdy2824@gmail.com">YOUR_EMAIL@example.com</a></dd>
+          <dt>Address</dt>
+          <dd>219, Matwai Basti, Vindhyanagar Road,<br>Vindhyanagar, Waidhan,<br>Singrauli, Madhya Pradesh 486885, India</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 YASINS LAB. All rights reserved.</div>
+</footer>
+</body>
+</html>
